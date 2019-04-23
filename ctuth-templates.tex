@@ -22,18 +22,15 @@
 		% No justification, sf bf font
 		\raggedright \sffamily \bfseries
 		\selectctulanguage{title}
+
+		\vspace*{-4.5ex}
+		\Large\includegraphics[height=\dimexpr4\normalbaselineskip+6ex]{logo_cvut_en}
 		%
-		% The document type
-		{\ctufield[title]{doctype}\par}
-		%
+		\\
 		\vspace*{3ex}
-		%
-		% A table containing: the CTU logo and name, faculty number, faculty and deparment name
-		\begin{tabular}{@{}l@{\hspace*{1em}}l@{}}
-			\Large\includegraphics[height=\dimexpr4\normalbaselineskip-1ex]{ctu_logo_black}
-		&
-			\Large\color{ctubluetext}\begin{tabular}[b]{@{}l@{}}\ctufield[title]{university-endl}\end{tabular}
-		\\[3ex]
+
+		% A table containing: faculty number, faculty and deparment name
+		\begin{tabular}{@{}l@{\hspace*{5em}}l@{}}
 %			\begin{tabular}[c]{@{}l@{}}
 			\raisebox{-8pt}{
 			\color{ctubluetext}\fontsize{32.7}{32.7}\selectfont
@@ -44,6 +41,11 @@
 		&
 			\begin{tabular}[c]{@{}l@{}}\rlap{\ctufield[title]{faculty}}\\[2pt]\ctufield[title]{department}\end{tabular}
 		\end{tabular}\par
+		%
+		% The document type
+		{\ctufield[title]{doctype}\par}
+		%
+		\vspace*{3ex}
 		%
 		\vspace{8ex plus 1fill}
 		%
